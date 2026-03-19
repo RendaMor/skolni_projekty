@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zpráva Nadpis</title>
+
+    <script>
+        function Display(elementID)
+    {
+        var id;
+
+        id = "Zprava" + elementID;
+        document.all.item(id).style.display = "";
+        id = "Nadpis" + elementID;
+        document.all.item(id).style.color = "red";
+    }
+
+    function Undisplay(elementID)
+    {
+        var id;
+
+        id = "Zprava" + elementID;
+        document.all.item(id).style.display = "none";
+        id = "Nadpis" + elementID;
+        document.all.item(id).style.color = "black";
+    }
+    </script>
+</head>
+<body>
+    <div style = "text-align: center;">
+        Myší najeďte nad titulek zprávy, kterou chcete přečíst
+    </div>
+
+    <DIV OnMouseOver="Display(1)" OnMouseOut="Undisplay(1)">
+        <H1 ID="Nadpis1">Toto je první zpráva</H1>
+        <DIV ID="Zprava1" style="display:none;">
+            <P>Toto je text první zprávy. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+        </DIV>
+    </DIV>
+
+    <DIV onMouseOver="Display(2)" OnMouseOut="Undisplay(2)">
+        <H1 ID="Nadpis2">Toto je druhá zpráva</H1>
+        <DIV ID="Zprava2" style="display:none;">
+            <P>Toto je text druhé zprávy. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+        </DIV>
+    </DIV>
+
+    <DIV onMouseOver = "Display(3)" OnMouseOut="Undisplay(3)">
+        <H1 ID="Nadpis3">Toto je třetí zpráva</H1>
+        <DIV ID="Zprava3" style="display:none;">
+            <P>Toto je text třetí zprávy. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</P>
+        </DIV>
+    </DIV>
+</body>
+</html>

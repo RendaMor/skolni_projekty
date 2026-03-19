@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulačka</title>
+</head>
+<body>
+  <script>
+    let a = +prompt("Zadejte první číslo:");
+    let b = +prompt("Zadejte druhé číslo:");
+    let op = prompt("Zadejte operaci (+, -, *, /):");
+    let result;
+
+    switch (op) {
+      case "+": result = a + b; break;
+      case "-": result = a - b; break;
+      case "*": result = a * b; break;
+      case "/": result = b !== 0 ? a / b : "Nelze dělit nulou!"; break;
+      default: result = "Neplatná operace";
+    }
+
+    alert("Výsledek: " + result);
+  </script>
+</body>
+</html>
