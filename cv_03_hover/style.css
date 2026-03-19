@@ -1,0 +1,138 @@
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.classic {
+    padding: 0.8em 1em;
+    border: 1px solid black;
+}
+
+.tooltip {
+    color: white;
+    position: relative;
+}
+
+.tooltip span {
+    display:none;
+    background-color: black;
+    
+}
+
+.tooltip:hover span {
+    border-radius: 5px 5px;
+    position: absolute;
+    left: 65px;
+    width: 40px;
+    display: inline;
+}
+
+.tooltip img:hover { 
+    background-color: rgba(10, 10, 10, 0.26);
+    border-radius: 10px;
+    border-width: 100px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ctverec {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 10%;
+}
+
+.animation1 {
+    animation: 5s animace1 linear 2s infinite;
+}
+
+@keyframes animace1 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation2 {
+    animation: 5s animace2 ease infinite;
+}
+
+@keyframes animace2 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation3 {
+    animation: 5s animace3 ease-in infinite;
+}
+
+@keyframes animace3 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation4 {
+    animation: 5s animace4 ease-out infinite;
+}
+
+@keyframes animace4 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation5 {
+    animation: 5s animace5 ease-in-out infinite;
+}
+
+@keyframes animace5 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation6 {
+    animation: 5s animace6 step-start infinite;
+}
+
+@keyframes animace6 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation7 {
+    animation: 5s animace7 step-end infinite;
+}
+
+@keyframes animace7 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation8 {
+    animation: 5s animace8 steps(5, start) infinite;
+}
+
+@keyframes animace8 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
+
+.animation9 {
+    animation: 5s animace9 cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+@keyframes animace9 {
+    0%{margin-left: -700px;}
+    50%{margin-left: 700px;}
+    100%{margin-left: -700px;}
+}
